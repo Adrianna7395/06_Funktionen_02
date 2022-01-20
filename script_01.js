@@ -9,9 +9,19 @@
 */
 
 
+// module: dividieren
+
+// output(divide(25,5));
+// output(divide(0,2));
+// output(divide(2,0));
+
+function divide(a,b) {
+    return a / b;
+}
+
 // module: multiplication
 
-output (multiplication(2,3))    //test
+// output (multiplication(2,3))    //test
 
 function multiplication(a,b) {
   return a * b;
