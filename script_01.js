@@ -8,6 +8,40 @@
 4. Ausgabe in Konsole
 */
 
+// module: calculus | test:
+output(calculator(2,2,"")); 
+output(calculator(2,2,"+"));
+
+output(calculator(2,2,"-"));
+
+output(calculator(2,2,"*"));
+
+output(calculator(2,2,"/"));
+
+output(calculator(2,0,"/"));
+
+output(calculator(2,0,"#!"));
+
+function calculator(a,b,op) {
+   
+    switch (op) {
+            case "+":   //addition
+            return add(a,b);
+                
+            case ("-"): // subtraction
+            return sub(a,b);
+               
+            case ("*"): //multiplication
+            return multiplication(a,b);
+                
+            case ("/"): //division
+            return divide(a,b);
+               
+    
+        default:
+            return "Something went wrong";
+    }
+}
 
 // module: dividieren
 
