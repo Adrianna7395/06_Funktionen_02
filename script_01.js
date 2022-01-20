@@ -8,9 +8,21 @@
 4. Ausgabe in Konsole
 */
 
+
+// module: multiplication
+
+output (multiplication(2,3))    //test
+
+function multiplication(a,b) {
+  return a * b;
+}
+
+
+
+
 // module: subtraction a - b  test: 
 
-output (sub(3,4));      //test
+// output (sub(3,4));      //test
 
 function sub(a,b) {
     return a - b;
