@@ -16,32 +16,37 @@ function startApp() {
     output(calculator(2,2,getOp()));
 }
 // module: input operator
-// output (getOp());
+output (getOp());
 function getOp()  {
     let op = prompt("Bitte Operator eingeben")
-    return op;
+    if (isOpValid(op)) {
+         return op;
+    } else {
+        return "Nicht korrekt, nochmal bitte... ";
+    }
+   
 }
 
 // module: check operator 
 
-output(isOpValid("+"));
-output(isOpValid("-"));
-output(isOpValid("*"));
-output(isOpValid("/"));
-output(isOpValid("h"));
-output(isOpValid(""));
+// output(isOpValid("+"));
+// output(isOpValid("-"));
+// output(isOpValid("*"));
+// output(isOpValid("/"));
+// output(isOpValid("h"));
+// output(isOpValid(""));
 function isOpValid(op) {
     // erste Variante
-//     switch (op) {
-//         case "+":
-//         case "-":
-//         case "*":
-//         case "/":
-//             return true
-//         default:
-//             return false;
-//     }
-// }
+    switch (op) {
+        case "+":
+        case "-":
+        case "*":
+        case "/":
+            return true
+        default:
+            return false;
+    }
+}
 
 // 2nd Variante 
 // return op == "+" || op == "-" || op == "*" || op == "/"
