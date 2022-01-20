@@ -11,12 +11,17 @@
 
 // module: dividieren
 
-// output(divide(25,5));
-// output(divide(0,2));
-// output(divide(2,0));
+output(divide(25,5));
+output(divide(0,2));
+output(divide(2,0));
 
 function divide(a,b) {
-    return a / b;
+
+    if (b == 0) { // Ausnahme
+        return "x";
+    } 
+        return a / b; // Regel
+    
 }
 
 // module: multiplication
