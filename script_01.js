@@ -11,9 +11,9 @@
 
 // module: dividieren
 
-output(divide(25,5));
-output(divide(0,2));
-output(divide(2,0));
+// output(divide(25,5));
+// output(divide(0,2));
+// output(divide(2,0));
 
 function divide(a,b) {
 
@@ -33,8 +33,6 @@ function multiplication(a,b) {
 }
 
 
-
-
 // module: subtraction a - b  test: 
 
 // output (sub(3,4));      //test
@@ -42,8 +40,6 @@ function multiplication(a,b) {
 function sub(a,b) {
     return a - b;
 }
-
-
 
 
 // module: addition a + b | test: (modul einer komplexere Aufgabe)
@@ -61,7 +57,11 @@ function add(a,b) {
 // output("Hello");
 // output(20);
 function output(outputData) {
-    console.log(outputData);
+    if (typeof outputData == "number") {
+        console.log("The result is: " + outputData);
+    } else {
+        console.log("Error: " + outputData);
+    }
 }
 
 
