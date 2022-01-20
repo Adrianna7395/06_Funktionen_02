@@ -8,11 +8,22 @@
 4. Ausgabe in Konsole
 */
 
+// module: subtraction a - b  test: 
+
+output (sub(3,4));      //test
+
+function sub(a,b) {
+    return a - b;
+}
+
+
+
+
 // module: addition a + b | test: (modul einer komplexere Aufgabe)
 
-output (add(2,3));
-output (add(2,-3));
-output (add(2.1,1.1));
+// output (add(2,3));              //test
+// output (add(2,-3));             //test
+// output (add(2.1,1.1));          //test
 
 function add(a,b) {
     return a + b;
