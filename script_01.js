@@ -8,19 +8,61 @@
 4. Ausgabe in Konsole
 */
 
+
+// application / App
+
+// startApp();
+function startApp() {
+    output(calculator(2,2,getOp()));
+}
+// module: input operator
+// output (getOp());
+function getOp()  {
+    let op = prompt("Bitte Operator eingeben")
+    return op;
+}
+
+// module: check operator 
+
+output(isOpValid("+"));
+output(isOpValid("-"));
+output(isOpValid("*"));
+output(isOpValid("/"));
+output(isOpValid("h"));
+output(isOpValid(""));
+function isOpValid(op) {
+    // erste Variante
+//     switch (op) {
+//         case "+":
+//         case "-":
+//         case "*":
+//         case "/":
+//             return true
+//         default:
+//             return false;
+//     }
+// }
+
+// 2nd Variante 
+// return op == "+" || op == "-" || op == "*" || op == "/"
+// }
+
+
+
+
 // module: calculus | test:
-output(calculator(2,2,"")); 
-output(calculator(2,2,"+"));
+// output(calculator(2,2,"")); 
+// output(calculator(2,2,"+"));
 
-output(calculator(2,2,"-"));
+// output(calculator(2,2,"-"));
 
-output(calculator(2,2,"*"));
+// output(calculator(2,2,"*"));
 
-output(calculator(2,2,"/"));
+// output(calculator(2,2,"/"));
 
-output(calculator(2,0,"/"));
+// output(calculator(2,0,"/"));
 
-output(calculator(2,0,"#!"));
+// output(calculator(2,0,"#!"));
 
 function calculator(a,b,op) {
    
