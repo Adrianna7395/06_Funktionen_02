@@ -10,6 +10,32 @@
 
 
 
+// module: console output | test:
+
+output("Hello");
+output(20);
+function output(outputData) {
+    console.log(outputData);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** Späßle *****/
 
