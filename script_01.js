@@ -11,20 +11,29 @@
 
 // application / App
 
-// startApp();
+startApp();
 function startApp() {
     output(calculator(2,2,getOp()));
+    output(calculator(getNumber(),getNumber(),getOp()));
+}
+
+// data input
+function getNumber() {
+    return 2;
 }
 // module: input operator
-output (getOp());
+// output (getOp());
 function getOp()  {
-    let op = prompt("Bitte Operator eingeben")
-    if (isOpValid(op)) {
-         return op;
-    } else {
-        return "Nicht korrekt, nochmal bitte... ";
+    const displayStr = "Bitte Operator eingeben";
+    let op = prompt(displayStr);
+
+    // if op is not valid and user didn't click at Abbrechen
+    while (!isOpValid(op) && (op !== null)) {
+
+        op = prompt(displayStr);
+
     }
-   
+   return op;
 }
 
 // module: check operator 
