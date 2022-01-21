@@ -18,9 +18,21 @@ function startApp() {
 }
 
 // data input
-function getNumber() {
-    return 2;
+function getNumber(numTxt) {
+    const displayStr = "Eingabe Zahl " + numTxt + ":";
+    let inputStr = prompt(displayStr);
+    let num = parseInt(inputStr);
+
+    // if num is NOT valid AND user DIDN'T click at Abbrechen
+    while (isNaN(num) && (inputStr !== null)) {
+        inputStr =  prompt(displayStr);
+        num = parseInt(inputStr); 
+    }
+
+    return num;
 }
+
+
 // module: input operator
 // output (getOp());
 function getOp()  {
